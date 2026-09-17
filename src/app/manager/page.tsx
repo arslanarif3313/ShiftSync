@@ -115,9 +115,7 @@ export default async function ManagerHome() {
                       <span className="badge badge-blue">{s.requiredSkill.name}</span>
                       {s.isPremium && <span className="badge badge-premium">★ Premium</span>}
                       <span className={`badge ${
-                        s.status === "PUBLISHED" ? "badge-green"
-                        : s.status === "CANCELLED" ? "badge-red"
-                        : "badge-neutral"
+                        s.status === "PUBLISHED" ? "badge-green" : "badge-neutral"
                       }`}>
                         {s.status}
                       </span>
